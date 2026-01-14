@@ -16,7 +16,8 @@ for attempt in range(1, max_attempts + 1):
         pg.FreeProxies()  # Use free rotating proxies
         scholarly.use_proxy(pg)
         
-        author: dict = scholarly.search_author_id(os.environ['GOOGLE_SCHOLAR_ID'])
+        # author: dict = scholarly.search_author_id(os.environ['GOOGLE_SCHOLAR_ID'])
+        author: dict = scholarly.search_author_id("zo8SfrMAAAAJ")
         # scholarly.fill(author, sections=['basics', 'indices', 'counts', 'publications'])
         print(f"Attempt {attempt} success")
         break  # Exit loop on first success
