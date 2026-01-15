@@ -6,7 +6,7 @@ import os, time
 from scholarly._proxy_generator import MaxTriesExceededException
 
 max_attempts = 100
-wait_seconds = 10  # 10 minutes
+wait_seconds = 60  # 10 minutes
 
 for attempt in range(1, max_attempts + 1):
     try:
